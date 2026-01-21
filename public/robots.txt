@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shanmugha.edu.in
+
+# Sitemaps
+Sitemap: https://shanmugha.edu.in/sitemap.xml

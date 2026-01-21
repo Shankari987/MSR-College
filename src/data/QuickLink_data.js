@@ -1,0 +1,73 @@
+const QuickLink_data =  [ {
+  id: 1,
+  img: 'https://source.unsplash.com/800x600/?academics',
+  title: 'Academics',
+  link: '/Engineering/all-course',
+  delay: '100',
+},
+{
+  id: 2,
+  img: 'https://source.unsplash.com/800x600/?admissions',
+  title: 'Admissions',
+  link: '/admission',
+  delay: '150',
+},
+{
+  id: 3,
+  img: 'https://source.unsplash.com/800x600/?departments',
+  title: 'Departments',
+  link: '/Engineering/all-course',
+  delay: '200',
+},
+{
+  id: 4,
+  img: 'https://source.unsplash.com/800x600/?student-resources',
+  title: 'Student Resources',
+  link: '/student-resources',
+  delay: '250',
+},
+{
+  id: 5,
+  img: 'https://source.unsplash.com/800x600/?campus-life',
+  title: 'Campus Life',
+  link: '/campus-life',
+  delay: '300',
+},
+{
+  id: 6,
+  img: 'https://source.unsplash.com/800x600/?career-services',
+  title: 'Career Services',
+  link: '/career-services',
+  delay: '350',
+},
+{
+  id: 7,
+  img: 'https://source.unsplash.com/800x600/?contact-us',
+  title: 'Contact Us',
+  link: '/contact-us',
+  delay: '400',
+},
+{
+  id: 8,
+  img: 'https://source.unsplash.com/800x600/?news-and-updates',
+  title: 'News and Updates',
+  link: '/features/exam-cell',
+  delay: '450',
+},
+{
+  id: 9,
+  img: 'https://source.unsplash.com/800x600/?alumni',
+  title: 'Alumni',
+  link: '/alumni',
+  delay: '500',
+},
+{
+  id: 10,
+  img: 'https://source.unsplash.com/800x600/?research',
+  title: 'Research',
+  link: '/features/research',
+  delay: '550',
+},
+]
+  
+  export default QuickLink_data;
