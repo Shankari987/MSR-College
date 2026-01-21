@@ -2,10 +2,10 @@
   "name": "msr-college",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-"start": "next start -p $PORT"
-  },
+  "dev": "next",
+  "build": "next build && next export",
+  "start": "next start -p $PORT"
+},
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
