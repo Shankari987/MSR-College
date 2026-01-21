@@ -43,14 +43,14 @@ const menu_data = [
         title: "Allied Health Science",
         icon: true,
         icon_name: "medical_information_black_48dp.svg",
-        link: "https://shanmugha.edu.in/AHS_College",
+        link: "/",
         mega_submenu: [],
       },
         {
         title: "Medical Science & research",
         icon: true,
         icon_name: "biotech_black_48dp.svg",
-        link: "/",
+        link: "https://msr-college.onrender.com",
         mega_submenu: [],
       },
 

@@ -26,7 +26,7 @@ const Header = ({ style_3, no_topBar = false }) => {
                 <div className="logo">
                   <Link href="/" legacyBehavior>
                     <a>
-                      <img className="ahs-logo-light" src={'/assets/images/logo/Shanmugha-Medical-Science-Logo-Print-01.svg'} alt="Corporate Logo" style={{ width: '380px', padding: '20px 30px 15px' }} />
+                      <img className="ahs-logo-light" src={'/assets/images/logo/ahslogo.svg'} alt="Corporate Logo" style={{ width: '380px', padding: '20px 30px 15px' }} />
                     </a>
                   </Link>
                 </div>
