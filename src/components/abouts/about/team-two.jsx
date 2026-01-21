@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
 
-const TeamTwo = ({ instructor, image_location_path='02' }) => {
+const TeamTwo = ({ instructor, image_location_path = '02' }) => {
     return (
         <div className="edu-team-grid team-style-2">
             <div className="inner">
                 <div className="thumbnail-wrap">
                     <div className="thumbnail">
-                        <Link href={`/team-details/${instructor.id}`}>
+                        <Link href={`/team-details/${instructor.id}`} legacyBehavior>
                             <a>
                                 <img src={`/assets/images/team/team-${image_location_path}/${instructor.img}`} alt="team images" />
                             </a>
@@ -25,7 +25,7 @@ const TeamTwo = ({ instructor, image_location_path='02' }) => {
                 </div>
                 <div className="content">
                     <h5 className="title">
-                        <Link href={`/team-details/${instructor.id}`}>
+                        <Link href={`/team-details/${instructor.id}`} legacyBehavior>
                             <a>{instructor.name}</a>
                         </Link>
                     </h5>

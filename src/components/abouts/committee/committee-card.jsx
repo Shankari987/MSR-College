@@ -15,7 +15,7 @@ const CommitteeCard = ({ data, classes }) => {
     >
       <div className="inner">
         <div className="thumbnail">
-          <Link href={`/course-details/${data?.id}`}>
+          <Link href={`/course-details/${data?.id}`} legacyBehavior>
             <a>
               <img
                 src={`/assets/images/course/course-06/${data?.img}`}
@@ -39,7 +39,7 @@ const CommitteeCard = ({ data, classes }) => {
             </li>
           </ul>
           <br />
-          <Link href="#">
+          <Link href="#" legacyBehavior>
             <a>
               <div onClick={toggleTable}>
                 <span id="element1">More Info</span>

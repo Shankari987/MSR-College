@@ -11,7 +11,7 @@ const MainMenu = () => {
                         <ul className="submenu">
                             {menu.submenus.map((nav, i) => (
                                 <li key={i}>
-                                    <Link href={`${nav.link}`}>
+                                    <Link href={`${nav.link}`} legacyBehavior>
                                         <a>
                                             {nav.title}
 
@@ -22,16 +22,16 @@ const MainMenu = () => {
                         </ul>
                     }
                     {menu.mega_menu && !menu.single_menu &&
-                        <ul className="mega-menu"  style={{paddingRight:'25px', marginRight:'130px'}}>
-                            {menu.submenus.map((nav, i) => ( 
+                        <ul className="mega-menu" style={{ paddingRight: '25px', marginRight: '130px' }}>
+                            {menu.submenus.map((nav, i) => (
                                 <li key={i} style={{ width: 'max-content' }}>
-                                    <h6  className="menu-title" style={{fontSize:"0.9em"}} > {nav.icon && <img src={`/assets/images/icons-svg/${nav.icon_name}`} />}  <Link href={`${nav.link}`}>
+                                    <h6 className="menu-title" style={{ fontSize: "0.9em" }} > {nav.icon && <img src={`/assets/images/icons-svg/${nav.icon_name}`} />}  <Link href={`${nav.link}`} legacyBehavior>
                                         <a>{nav.title}</a>
                                     </Link></h6>
                                     <ul className="submenu mega-sub-menu-01">
                                         {nav.mega_submenu.map((m, i) => (
                                             <li key={i}>
-                                                {nav.icon && <img src={`/assets/images/icons-svg/${nav.icon_name}`} />} <Link href={`${m.link}`}>
+                                                {nav.icon && <img src={`/assets/images/icons-svg/${nav.icon_name}`} />} <Link href={`${m.link}`} legacyBehavior>
                                                     <a>{m.title}</a>
                                                 </Link>
                                             </li>

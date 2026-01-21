@@ -11,7 +11,7 @@ const Breadcrumb = ({ title, current_page }) => {
                     </div>
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
-                            <Link href="/">
+                            <Link href="/" legacyBehavior>
                                 <a>Home</a>
                             </Link>
                         </li>

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade, Autoplay } from "swiper";
+import { Navigation, EffectFade, Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from 'framer-motion';
@@ -77,8 +77,8 @@ const HeroSlider = () => {
                                                 </h1>
                                                 <p data-sal-delay="200" data-sal="slide-up" data-sal-duration="1000">{sm_text}</p>
                                                 <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                                    <Link href="Engineering/all-course">
-                                                    <a className="edu-btn btn-secondary">{btn_text} <i className="icon-4"></i></a>
+                                                    <Link href="Engineering/all-course" legacyBehavior>
+                                                        <a className="edu-btn btn-secondary">{btn_text} <i className="icon-4"></i></a>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -102,18 +102,18 @@ const HeroSlider = () => {
 
             <ul className="shape-group">
                 <motion.li className="shape-1 scene" data-sal-delay="1000" data-sal="fade" data-sal-duration="1000"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(25).x,
                         y: mouseReverse(25).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/others/shape-10.png" alt="Shape" />
                 </motion.li>
                 <motion.li className="shape-2 scene" data-sal-delay="1000" data-sal="fade" data-sal-duration="1000"
-                    animate={ {
+                    animate={{
                         x: mouseDirection(25).x,
                         y: mouseDirection(25).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/others/shape-11.png" alt="Shape" />
                 </motion.li>

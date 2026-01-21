@@ -6,22 +6,22 @@ import { remove_cart_course } from '../../../redux/features/cart-slice';
 const Cart = () => {
     const cartItems = useSelector(state => state.cart.cartCourses);
     const dispatch = useDispatch();
-    const {total} = useCartInfo();
-    
+    const { total } = useCartInfo();
+
     return (
         <div className="Oursite-header-mini-cart">
-            {cartItems.length === 0 && 
+            {cartItems.length === 0 &&
                 <div className="wrapper empty-cart-wrapper">
                     <h5 className="empty-cart">Your cart is empty</h5>
                 </div>
             }
-            {cartItems.length >= 1 && 
+            {cartItems.length >= 1 &&
                 <div className="wrapper">
                     <ul className={`items ${cartItems.length > 4 ? 'cart-height' : ''}`}>
                         {cartItems.map((item, index) => (
                             <li key={index} className="each-item">
                                 <div className="thumb">
-                                    <Link href={`/course-details/${item.id}`}>
+                                    <Link href={`/course-details/${item.id}`} legacyBehavior>
                                         <a>
                                             <img src={item.img} alt="course-thumb" />
                                         </a>
@@ -29,10 +29,10 @@ const Cart = () => {
                                 </div>
                                 <div className="content">
                                     <h5 className="title">
-                                        <Link href={`/course-details/${item.id}`}>
+                                        <Link href={`/course-details/${item.id}`} legacyBehavior>
                                             <a>
                                                 {item.title}
-                                                </a>
+                                            </a>
                                         </Link>
                                     </h5>
                                     <div className="price-and-quantity">
@@ -56,11 +56,11 @@ const Cart = () => {
                     </div>
 
                     <div className="cart-checkout-buttons">
-                        <Link href="/cart">
+                        <Link href="/cart" legacyBehavior>
                             <a className="edu-btn btn-small cart-btn">View Cart</a>
                         </Link>
 
-                        <Link href="/checkout">
+                        <Link href="/checkout" legacyBehavior>
                             <a className="edu-btn btn-small btn-secondary checkout-btn">Checkout</a>
                         </Link>
                     </div>

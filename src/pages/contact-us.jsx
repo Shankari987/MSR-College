@@ -1,6 +1,6 @@
 import SEO from '../components/seo';
 import { Wrapper } from '../layout';
-import ContactUsMain from '../components/contact-us';
+import ContactUsMain from '../MSR_College/contact-us';
 
 const ContactUs = () => {
     return (

@@ -4,13 +4,12 @@ const CourseTypeOne = ({ data, classes }) => {
 
   return (
     <div
-      className={`edu-course all-course ${
-        classes ? classes : ""
-      } hover-button-bg-white`}
+      className={`edu-course all-course ${classes ? classes : ""
+        } hover-button-bg-white`}
     >
       <div className="inner">
         <div className="thumbnail">
-          <Link href={`Engineering/Department/${data.url}`}>
+          <Link href={`Engineering/Department/${data.url}`} legacyBehavior>
             <a>
               <img
                 src={`${data.img}`}
@@ -25,7 +24,7 @@ const CourseTypeOne = ({ data, classes }) => {
             </span>
           </div>
         </div>
-        <div className="content" style={{height: '170px'}}>
+        <div className="content" style={{ height: '170px' }}>
           <span className="course-level">{data.level}</span>
           <h6 className="title">
             <a href={`/Department/${data.url}`}>{data.title}</a>

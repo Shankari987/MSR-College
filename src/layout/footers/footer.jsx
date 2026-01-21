@@ -19,7 +19,7 @@ const footer_contents = {
                 { link: '/Engineering/Committee/posh-cell', title: 'Posh Cell' },
                 { link: '/Engineering/Committee/feedback', title: 'Feedback' },
                 { link: '/aicte', title: 'AICTE Approval Copies' },
-                {link : '/privacy-policy',title:'Privacy Policy'}
+                { link: '/privacy-policy', title: 'Privacy Policy' }
                 // { link: 'https://aakam360.com/', title: 'Aakam360' },
                 // { link: 'wome-empowerment', title: 'Women Empowerment Cell' },
 
@@ -53,7 +53,7 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                         <div className="col-lg-3 col-md-6">
                             <div className="edu-footer-widget">
                                 <div className="logo">
-                                    <Link href={'/'}>
+                                    <Link href={'/'} legacyBehavior>
                                         <a>
                                             {!dark_bg && <>
                                                 {!style_2 && <img className="logo-light" src={logoLight} alt="Corporate Logo" />}
@@ -62,7 +62,7 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                                         </a>
                                     </Link>
 
-                                    <Link href={'/'}>
+                                    <Link href={'/'} legacyBehavior>
                                         <a>
                                             {dark_bg && <img className="logo-light" src={home_4 ? '/assets/images/logo/logo-white.png' : '/assets/images/logo/logo-light-2.png'} alt="Corporate Logo" />}
                                         </a>
@@ -78,34 +78,34 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                                     </ul>
                                 </div> */}
                                 <div className="widget-information">
-  <ul className="information-list">
-    <li>
-      <span style={{ fontWeight: "bold" }}>For Admission Contacts:</span>
-      <span style={{ marginLeft: "5px" }}>
-        <a href="tel:7373672999">7373672999</a> / 
-        <a href="tel:7339383999" style={{ marginLeft: "5px" }}>7339383999</a> / 
-        <a href="tel:7200567817" style={{ marginLeft: "5px" }}>7200567817</a>
-      </span>
-    </li>
+                                    <ul className="information-list">
+                                        <li>
+                                            <span style={{ fontWeight: "bold" }}>For Admission Contacts:</span>
+                                            <span style={{ marginLeft: "5px" }}>
+                                                <a href="tel:7373672999">7373672999</a> /
+                                                <a href="tel:7339383999" style={{ marginLeft: "5px" }}>7339383999</a> /
+                                                <a href="tel:7200567817" style={{ marginLeft: "5px" }}>7200567817</a>
+                                            </span>
+                                        </li>
 
-    <li>
-      <span style={{ fontWeight: "bold" }}>For Other Enquiry:</span> 
-      <a href={`tel:${call}`} style={{ marginLeft: "5px" }}>{call}</a>
-    </li>
+                                        <li>
+                                            <span style={{ fontWeight: "bold" }}>For Other Enquiry:</span>
+                                            <a href={`tel:${call}`} style={{ marginLeft: "5px" }}>{call}</a>
+                                        </li>
 
-    <li>
-      <span style={{ fontWeight: "bold" }}>Email:</span> 
-      <a href={`mailto:${email}`} rel="noreferrer" target="_blank" style={{ marginLeft: "5px" }}>{email}</a>
-    </li>
+                                        <li>
+                                            <span style={{ fontWeight: "bold" }}>Email:</span>
+                                            <a href={`mailto:${email}`} rel="noreferrer" target="_blank" style={{ marginLeft: "5px" }}>{email}</a>
+                                        </li>
 
-    <li>
-      <span style={{ fontWeight: "bold" }}>Address:</span>
-      <span style={{ marginLeft: "5px" }}>
-      Pullipalayam, Morur(P.O),Sankari (T.K). Salem (D.T.), Tamil Nadu – 637 304.
-      </span>
-    </li>
-  </ul>
-</div>
+                                        <li>
+                                            <span style={{ fontWeight: "bold" }}>Address:</span>
+                                            <span style={{ marginLeft: "5px" }}>
+                                                Pullipalayam, Morur(P.O),Sankari (T.K). Salem (D.T.), Tamil Nadu – 637 304.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
 
 
 
@@ -118,7 +118,13 @@ const Footer = ({ style_2, dark_bg, home_4 }) => {
                                     <h4 className="widget-title">{w.widget_title}</h4>
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
-                                            {w.footer_links.map((l, i) => <li key={i}><Link href={`/${l.link}`}><a>{l.title}</a></Link></li>)}
+                                            {w.footer_links.map((l, i) => (
+                                                <li key={i}>
+                                                    <Link href={l.link.startsWith('http') ? l.link : `/${l.link}`} legacyBehavior>
+                                                        <a>{l.title}</a>
+                                                    </Link>
+                                                </li>
+                                            ))}
                                         </ul>
                                     </div>
                                 </div>

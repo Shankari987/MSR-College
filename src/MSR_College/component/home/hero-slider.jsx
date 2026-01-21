@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectFade, Autoplay } from "swiper";
+import { Navigation, EffectFade, Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 
 const slider_data = [
     {
         id: 1,
         src: '/assets/images/engineering_slider/slider3.webp',
-    },   
+    },
 ];
 
 const HeroSlider = () => {
@@ -37,11 +37,11 @@ const HeroSlider = () => {
                     loadPrevNextAmount: 1
                 }}
             >
-              {slider_data.map((item) => {
-                    const {id, src } = item;
+                {slider_data.map((item) => {
+                    const { id, src } = item;
                     return (
                         <SwiperSlide key={id}>
-                            <img  src={src} className="swiper-lazy" alt="image" />
+                            <img src={src} className="swiper-lazy" alt="image" />
                         </SwiperSlide>
                     )
                 })}

@@ -7,8 +7,8 @@ const VisionMission = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
         <div className="edu-about-area about-style-6">
-            <div className="container"  style={{maxWidth:'80%'}}>
-                < div className="row g-5 align-items-center" style={{marginTop:'auto'}}>
+            <div className="container" style={{ maxWidth: '80%' }}>
+                < div className="row g-5 align-items-center" style={{ marginTop: 'auto' }}>
                     <div className="col-lg-5">
                         <div className="about-image-gallery">
                             <div className="main-img-1">
@@ -34,7 +34,7 @@ const VisionMission = () => {
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <div className="about-content" style={{maxWidth:'100%'}}>
+                        <div className="about-content" style={{ maxWidth: '100%' }}>
                             <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
 
                                 <h2 className="title">EMPOWERING LIVES THROUGH EDUCATION</h2>
@@ -81,7 +81,7 @@ const VisionMission = () => {
                                     </div>
                                 </div>
                             </div>
-                            <Link href="/contact-us">
+                            <Link href="/contact-us" legacyBehavior>
                                 <a className="edu-btn btn-curved" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Contact Us <i className="icon-4"></i></a>
                             </Link>
                         </div>

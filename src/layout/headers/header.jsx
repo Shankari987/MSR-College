@@ -43,29 +43,29 @@ const Header = ({ style_3, no_topBar = false }) => {
 
                 <div className="header-top-right">
                   <ul className="header-info">
-                   {/*  <li>
-                      <Link href="/alumni">
+                    {/*  <li>
+                      <Link href="/alumni" legacyBehavior>
                         <a>Alumni</a>
                       </Link>
                     </li> */}
 
                     <li>
-                      <Link href="/certificate">
+                      <Link href="/certificate" legacyBehavior>
                         <a>Recognizations/ Certificates</a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="https://aakam360.com/">
+                      <Link href="https://aakam360.com/" legacyBehavior>
                         <a>AAKAM 360</a>
                       </Link>
                     </li>
                     {/* <li>
-                      <Link href="/naac-iqac">
+                      <Link href="/naac-iqac" legacyBehavior>
                         <a>NAAC-IQAC</a>
                       </Link>
                     </li> */}
                     <li>
-                      <Link href="/">
+                      <Link href="/" legacyBehavior>
                         <a>Sign In</a>
                       </Link>
                     </li>
@@ -79,14 +79,14 @@ const Header = ({ style_3, no_topBar = false }) => {
         <div id="edu-sticky-placeholder"></div>
 
         <div className={`header-mainmenu ${sticky ? "edu-sticky" : ""}`}>
-          <div className="container" style={{maxWidth:'100%'}}>
+          <div className="container" style={{ maxWidth: '100%' }}>
             <div className="header-navbar">
               <div className="header-brand">
                 <div className="logo">
-                  <Link href="/">
+                  <Link href="/" legacyBehavior>
                     <a>
-                      <img className="logo-light" src={'/assets/images/logo/engineering_logo_1200.png'} alt="Corporate Logo" style={{width:'350px'}}/>
-                    
+                      <img className="logo-light" src={'/assets/images/logo/engineering_logo_1200.png'} alt="Corporate Logo" style={{ width: '350px' }} />
+
                     </a>
                   </Link>
                 </div>

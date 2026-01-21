@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
-const Breadcrumb = ({ title, current_page}) => {
+const Breadcrumb = ({ title, current_page }) => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
         <div className="edu-breadcrumb-area">
@@ -14,12 +14,12 @@ const Breadcrumb = ({ title, current_page}) => {
                     </div>
                     <ul className="edu-breadcrumb">
                         <li className="breadcrumb-item">
-                            <Link href="/">
-                            <a>Home</a>
+                            <Link href="/" legacyBehavior>
+                                <a>Home</a>
                             </Link>
                         </li>
                         <li className="separator"><i className="icon-angle-right"></i></li>
-                      
+
                         <li className="breadcrumb-item active" aria-current="page">{current_page}</li>
                     </ul>
                 </div>
@@ -29,27 +29,27 @@ const Breadcrumb = ({ title, current_page}) => {
                     <span></span>
                 </li>
                 <motion.li className="shape-2 scene"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(40).x,
                         y: mouseReverse(40).y
-                    } }    
+                    }}
                 >
                     <img src="/assets/images/about/shape-12.png" alt="shape" /></motion.li>
                 <motion.li className="shape-3 scene"
-                    animate={ {
+                    animate={{
                         x: mouseDirection(40).x,
                         y: mouseDirection(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-15.png" alt="shape" /></motion.li>
                 <li className="shape-4">
                     <span></span>
                 </li>
                 <motion.li className="shape-5 scene"
-                    animate={ {
+                    animate={{
                         x: mouseReverse(40).x,
                         y: mouseReverse(40).y
-                    } }
+                    }}
                 >
                     <img src="/assets/images/about/shape-07.png" alt="shape" />
                 </motion.li>

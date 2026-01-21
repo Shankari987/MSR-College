@@ -46,13 +46,13 @@ const SearchPopup = ({ isSearchOpen, setIsSearchOpen }) => {
             {filteredData.length === 0 ? (
               <p>Sorry, Couldn't find your search.</p>
             ) : (
-              filteredData.slice(0,2).map((sdata, i) => (
+              filteredData.slice(0, 2).map((sdata, i) => (
                 <div
                   key={i}
                   style={{ marginBottom: '2em' }}
                 >
 
-                  <Link href={sdata.link}>
+                  <Link href={sdata.link} legacyBehavior>
                     <a style={{ marginBottom: 1, textDecoration: 'underline' }} >    <LinkIcon size="1.3rem" /> {sdata.title} </a>
 
                   </Link>

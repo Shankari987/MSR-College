@@ -43,7 +43,7 @@ const RegisterForm = () => {
             <div className="form-group chekbox-area">
                 <div className="edu-form-check">
                     <input value={values.terms} onChange={handleChange} onBlur={handleBlur} type="checkbox" name='terms' id="terms-condition" />
-                    <label htmlFor="terms-condition">I agree the   <Link href="/terms-condition">
+                    <label htmlFor="terms-condition">I agree the   <Link href="/terms-condition" legacyBehavior>
                             <a>Terms & Condition.</a>
                         </Link>
                     </label>

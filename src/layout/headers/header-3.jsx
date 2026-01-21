@@ -682,9 +682,8 @@ const HeaderThree = () => {
   return (
     <>
       <header
-        className={`edu-header header-style-3 header-fullwidth no-topbar ${
-          isTransparent ? "header-transparent" : ""
-        }`}
+        className={`edu-header header-style-3 header-fullwidth no-topbar ${isTransparent ? "header-transparent" : ""
+          }`}
       >
         <div id="edu-sticky-placeholder"></div>
         <div className={`header-mainmenu ${sticky ? "edu-sticky" : ""}`}>
@@ -692,7 +691,7 @@ const HeaderThree = () => {
             <div className="header-navbar">
               <div className="header-brand">
                 <div className="logo">
-                  <Link href="/">
+                  <Link href="/" legacyBehavior>
                     <a>
                       {/* Use white logo for transparent header, dark for solid */}
                       <img

@@ -64,10 +64,10 @@ const Left_Banner = () => {
             <h3 className='head-line'>Admission</h3>
             <h5 className='sec-line'>Now Open for Registration</h5>
             <h6 className='third-line'>2025-2026</h6>
-            <h6 style={{ color: '#FFD700', fontSize:"20px" }} className='sec-line'>By submitting this form, I consent to receive communications from the college through WhatsApp, SMS, Email, phone Calls, and other channels, even if my number is registered with DND/NDNC</h6>
-            
+            <h6 style={{ color: '#FFD700', fontSize: "20px" }} className='sec-line'>By submitting this form, I consent to receive communications from the college through WhatsApp, SMS, Email, phone Calls, and other channels, even if my number is registered with DND/NDNC</h6>
+
             <center>
-              <Link href='https://admissions.shanmugha.edu.in/'>
+              <Link href='https://admissions.shanmugha.edu.in/' legacyBehavior>
                 <center>
                   <button className='enroll-btn' href="/">Enroll Now</button>
                 </center>
